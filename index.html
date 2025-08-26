@@ -1,31 +1,138 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fênix Loja</title>
-  <link rel="stylesheet" href="style.css">
+  <title>FÃªnix Loja</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Reset bÃ¡sico */
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f12711, #f5af19);
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px 20px;
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(5px);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.2em;
+      color: #00ff88;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #25d366;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background: #1ebe5a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(5px);
+      margin-top: 40px;
+    }
+
+  </style>
 </head>
 <body>
-  <header>
-    <h1>🔥 Fênix Loja Online 🔥</h1>
-    <p>Produtos incríveis com o melhor preço!</p>
-  </header>
 
-  <main class="container">
-    <div class="card">
-      <img src="https://via.placeholder.com/250" alt="Produto 1">
-      <h3>Produto 1</h3>
-      <p class="price">R$ 99,90</p>
-      <a class="btn" href="https://wa.me/5500000000000?text=Olá! Quero comprar o Produto 1">Comprar no WhatsApp</a>
-    </div>
+<header>
+  <h1>ðŸ”¥ FÃªnix Loja ðŸ”¥</h1>
+  <p>Produtos incrÃ­veis com o melhor preÃ§o!</p>
+</header>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/250" alt="Produto 2">
-      <h3>Produto 2</h3>
-      <p class="price">R$ 149,90</p>
-      <a class="btn" href="https://wa.me/5500000000000?text=Olá! Quero comprar o Produto 2">Comprar no WhatsApp</a>
-    </div>
-  </main>
+<main class="container">
+  <div class="card">
+    <img src="https://via.placeholder.com/250" alt="Produto 1">
+    <h3>Produto 1</h3>
+    <p class="price">R$ 99,90</p>
+    <a class="btn" href="https://wa.me/5500000000000?text=OlÃ¡! Quero comprar o Produto 1">Comprar no WhatsApp</a>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/250" alt="Produto 2">
+    <h3>Produto 2</h3>
+    <p class="price">R$ 149,90</p>
+    <a class="btn" href="https://wa.me/5500000000000?text=OlÃ¡! Quero comprar o Produto 2">Comprar no WhatsApp</a>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/250" alt="Produto 3">
+    <h3>Produto 3</h3>
+    <p class="price">R$ 199,90</p>
+    <a class="btn" href="https://wa.me/5500000000000?text=OlÃ¡! Quero comprar o Produto 3">Comprar no WhatsApp</a>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 FÃªnix Loja. Todos os direitos reservados.
+</footer>
+
 </body>
 </html>
